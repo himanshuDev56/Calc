@@ -1,21 +1,41 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto Mono', monospace;
     font-size: 2vw !important;
     font-weight:300 ;
     box-sizing: border-box;
 }
 
+
 .table-div{
-position: relative;
-    vertical-align: center;
-    left:20vw;
-    height: 30vw;
-    width: 30vw;
-}
+  position: relative;
+      vertical-align: center;
+      left:20vw;
+      height: 30vw;
+      width: 30vw;
+  }
+  @media only screen and (max-width: 768px) {
+    *{
+      font-size: 5vw !important;
+    }
+    .table-div{
+    height: 50vh;
+    width: 50vw;
+    
+    }
+    .calculator{
+      position: relative;
+      top:10vh;
+    }
+    .calculator-screen {
+    
+    height: 10vw!important;
+    /* height: 10vw; */
+    }
+  }  
 p{
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 }
 .operator > .special:hover{
     transition: 0.7s;
@@ -32,17 +52,17 @@ p{
   .calculator-screen {
     width: 100%;
     
-    height: 80px;
+    height: 6vw;
     border: none;
     background-color: #252525;
     color: #fff;
     text-align: right;
-    padding-right: 20px;
-    padding-left: 10px;
+    padding-right: 1vw;
+    padding-left: 1vw;
   }
   
   button {
-    height: 60px;
+    /* height: 60px; */
     background-color: #fff;
     border-radius: 3px;
     border: 1px solid #c4c4c4;
@@ -58,7 +78,8 @@ p{
   }
   
   .operator {
-    color: #337cac;
+    
+    color: #337cac!important;
   }
   
   .all-clear {
@@ -72,7 +93,7 @@ p{
   }
   
   .equal-sign {
-    background-color: #2e86c0;
+    background-color: #2188cc;
     border-color: #337cac;
     color: #fff;
     height: 100%;
@@ -86,6 +107,6 @@ p{
   .calculator-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
+    grid-gap: 1vw;
+    padding: 1vw;
   }
